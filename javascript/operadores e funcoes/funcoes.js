@@ -14,13 +14,16 @@ function soma(a, b) {
 
 console.log(soma(5, 3));
 
-// calculo o imc 
+//função para calcular o IMC
 function calcularIMC(peso, altura) {
-    let imc = peso / (altura * altura);
-    return imc.toFixed(2);
+    return (peso / (altura * altura)).toFixed(2);
 }
 
-console.log(calcularIMC(70, 1.75));
+// Exemplo de uso
+let peso = Number(prompt("Digite seu peso (kg):"));
+let altura = Number(prompt("Digite sua altura (m):"));
+alert("Seu IMC é: " + calcularIMC(peso, altura));
+
 
 // função para verificar se um número é par ou ímpar
 function parOuImpar(numero) {
@@ -31,5 +34,10 @@ function parOuImpar(numero) {
     }
 }
 
-console.log(parOuImpar(10));
-console.log(parOuImpar(7));
+// Exemplo de uso
+let numero = Number(prompt("Digite um número:"));
+alert("O número é: " + parOuImpar(numero));
+
+console.log("------funções nativas------");
+let agora = new Date();
+console.log(agora);
