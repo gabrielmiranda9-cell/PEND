@@ -7,3 +7,13 @@ console.log(url); // "https://exemple.com"
 
 document.getElementById("caixa").style.backgroundColor = "lightblue";
 document.getElementById("alerta").classList.add("destaque");
+document.getElementById("alert").classList.remove("oculto");
+let novoparagtrafo = document.createElement("p");
+novoparagtrafo.textContent = "este elemento pelo javascript";
+document.getElementById("container").appendChild(novoparagtrafo);
+
+let novoitem = document.createElement("li");
+novoitem.textContent = "item novo";
+document.getElementById("lista").appendChild(novoitem);
+let item = document.getElementById("item1");
+document.getElementById("lista").removeChild(item);
